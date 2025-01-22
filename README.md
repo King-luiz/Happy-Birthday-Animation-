@@ -13,12 +13,9 @@ This project delivers a vibrant, animated birthday greeting with colorful bounci
 
 ---
 
-## 🖼 Demo
+## 🖼 Demo 
 
-**[Click here to view the live demo](#)**  
-(*Replace `#` with your hosted link, such as GitHub Pages, CodePen, or Netlify.*)
-
----
+https://github.com/user-attachments/assets/94d5fbf7-ed7f-4815-a2a6-e94bfdd9f1f7
 
 ## 🎯 Project Output
 
