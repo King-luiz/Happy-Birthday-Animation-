@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .birthday-message {
+            font-size: 4em;
+            font-weight: bold;
+            animation: bounce 1s infinite alternate, colorChange 2s infinite;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-30px); }
+        }
+
+        @keyframes colorChange {
+            0% { color: #ff6347; } /* Tomato */
+            25% { color: #ffa500; } /* Orange */
+            50% { color: #32cd32; } /* Lime Green */
+            75% { color: #1e90ff; } /* Dodger Blue */
+            100% { color: #9370db; } /* Medium Purple */
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 70px;
+            background-color: #ff6347;
+            border-radius: 20px 20px 0 0;
+            animation: rise 5s linear infinite;
+        }
+
+        @keyframes rise {
+            0% { bottom: -100px; }
+            100% { bottom: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="birthday-message">Happy Birthday!</div>
+
+<div class="balloons">
+    <div class="balloon" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 25%; animation-delay: 1s; background-color: #ffa500;"></div>
+    <div class="balloon" style="left: 40%; animation-delay: 2s; background-color: #32cd32;"></div>
+    <div class="balloon" style="left: 55%; animation-delay: 3s; background-color: #1e90ff;"></div>
+    <div class="balloon" style="left: 70%; animation-delay: 4s; background-color: #9370db;"></div>
+    <div class="balloon" style="left: 85%; animation-delay: 5s;"></div>
+</div>
+
+</body>
+</html>
