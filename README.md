@@ -38,6 +38,6 @@ When you open the project in a browser, you’ll see:
 
 1. Clone or download this repository:
    ```bash
-   git clone [<repository_url>](https://github.com/King-luiz/Happy-Birthday-Animation)
+   git clone (https://github.com/King-luiz/Happy-Birthday-Animation)
    ```
 
